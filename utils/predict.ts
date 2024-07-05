@@ -19,7 +19,7 @@ export function predictNextSection(lastNumbers: number[]): number | null {
     }
 
     // Convert the last 10 numbers to their respective sections
-    const lastSections: number[] = lastNumbers.slice(-10).map(getSectionNumber);
+    const lastSections: any[] = lastNumbers.slice(-10).map(getSectionNumber);
 
     // Count occurrences of each section
     const counts: { [key: number]: number } = {};
